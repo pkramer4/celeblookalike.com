@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="The best celebrity look alike finder on the
+  internet. See who you look like!"/>
+  <title>Celeb Look Alike</title>
+  <link rel = "icon" href = "images/devito_icon.png" type = "image/x-icon">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+
+<body>
+  <header>
+    <a href = 'index.html'>
+    <img id = "topLogo" src = "images/logo2.png" alt = 'Celebrity Look Alike logo'/>
+  </a>
+  </header>
+
+  <section id = 'appContainer'>
+
+    <a class = "button" href="devito.html">
+      <div id = 'find'>
+        Find My Look Alike
+      </div>
+    </a>
+
+
+    <div id = 'photoContainer'>
+
+      <!--create input button -->
+      <div class="image-upload">
+      <label id = "photoLabel" for="loadPhoto">
+        <img id = "uploadPhoto" src="images/photo_icon.png" alt = "upload photograph button"/>
+      </label>
+      <input id = 'loadPhoto' type="file" accept="image/*" onchange="loadFile(event)">
+    </div>
+
+    <div id = 'loadText'>
+      Click to upload photo
+    </div>
+
+      <!--script for displaying input image -->
+      <script>
+      var loadFile = function(event) {
+        var reader = new FileReader();
+        reader.onload = function(){
+          var output = document.getElementById('output');
+          output.src = reader.result;
+          output.style.maxHeight = '500px';
+          output.style.border = '2px solid #e1a307';
+
+
+          var loadButton = document.getElementById('uploadPhoto');
+          loadButton.style.display = 'none';
+
+          container = document.getElementById('photoContainer');
+          container.style.display = 'none';
+
+          var findButton = document.getElementById('find');
+          findButton.style.display = 'block';
+
+        };
+        reader.readAsDataURL(event.target.files[0]);
+      };
+      </script>
+    </div>
+
+    <img class = 'photos' id="output"/>
+
+    <div class = 'info'>
+      <p class = 'intro' id = "welcome">
+        Welcome to the Celeb Look Alike Finder
+      </p>
+      <p class = 'intro' id = 'description'>
+        upload your picture, and our rigorously coded algorithm
+        will search through our vast database of celebrity
+        photos to find the celebrity that you most closely resemble.
+        Our unique software ensures that you look like the
+        celebrity we find within 99.8% confidence.
+      </p>
+      <p id = 'copyright'>
+        By using celeb look alike finder you agree to our
+        <a href = 'terms.html'>Terms of service</a>
+      </p>
+  </section>
+
+   <footer id = 'copyright'> <small>&copy; Copyright 2020, Kleos Holdings LLC.</small> </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+body {
+  background-image: url("swirl_back_3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header{
+  text-align: center;
+  border-bottom: 2px solid #e1a307;
+  margin-bottom: 30px;
+}
+
+h2{
+  font: 30px Verdana, sans-serif;
+  color: #313131;
+  text-align: center;
+}
+
+h3 {
+  font: 30px Verdana, sans-serif;
+  color: #313131;
+  text-align: center;
+}
+
+ul {
+  font: 20px times, serif;
+  color: #313131;
+  padding-right: 50px;
+}
+
+#cheekyTitle{
+  font: 30px Verdana, sans-serif;
+  color: #313131;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+#topLogo {
+  width: 40%;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+
+#photoContainer {
+  object-fit: cover;
+  object-position: 50% 50%;
+  overflow: hidden;
+  border: 2px solid #e1a307;
+  background-color: #ebebeb;
+}
+
+#photoContainer {
+  position: relative;
+  padding: 0;
+  width: 70%;
+  height: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+
+.image-upload>input {
+  display: none;
+}
+
+.image-upload {
+  padding: 50px;
+  radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#uploadPhoto {
+  width: 50px;
+  transition: width 0.25s;
+}
+
+#uploadPhoto:hover {
+  width: 55px;
+}
+
+#loadText {
+  text-align: center;
+  margin-top: 230px;
+  font: 14px Verdana, sans-serif;
+
+}
+
+
+.button {
+  text-decoration: none;
+  color: black;
+}
+
+#output {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#find {
+  display: none;
+  text-align: center;
+  margin: auto;
+  border: 2px solid #e1a307;
+  background-color: #e1a307;
+  border-radius: 10px;
+  width: 225px;
+  padding: 10px;
+  font: 1.2em "Fira Sans", sans-serif;
+  color: white;
+  margin-bottom: 25px;
+
+}
+
+#find:hover {
+  border: 2px solid #ffc227;
+  background-color: #ffc227;
+  color: white;
+
+}
+
+.info {
+  margin: 50px 20px 0px 20px;
+}
+
+#welcome {
+  font: 17px Verdana, sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #313131;
+}
+
+#description {
+  font: 13px Verdana, sans-serif;
+  color: #313131;
+}
+
+#copyright {
+  text-align:center;
+  font: 10px Verdana, sans-serif;
+}
+
+#devitoText{
+  text-align: center;
+  font: 40px Verdana, sans-serif;
+  color: #313131;
+}
+
+.photos{
+  text-align: center;
+}
+
+#finalPhoto{
+  text-align: center;
+  border: 2px solid #e1a307;
+  margin-bottom:20px;
+}
+
+#copyright{
+  text-align: center;
+}
